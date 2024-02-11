@@ -1,0 +1,38 @@
+# Global variables
+@baseUrl = http://localhost:3333
+@baseUrlWebsocket = ws://localhost:3333
+
+# (1) Create poll
+# @name create_poll
+POST {{baseUrl}}/polls
+Accept: */*
+Content-Type: application/json
+
+{
+  "title": "Which is the best Node.js framework?",
+  "options": ["Express", "Fastify", "NestJS", "HapiJS"]
+}
+
+###
+# (2) Get one poll
+# @name find_poll_by_id
+GET {{baseUrl}}/polls/bd879322-7eb5-4fca-88e0-1302d254f4f8
+Accept: */*
+
+###
+# (3) Vote on poll
+# @name vote_on_poll
+POST {{baseUrl}}/polls/bd879322-7eb5-4fca-88e0-1302d254f4f8/votes
+Accept: */*
+Content-Type: application/json
+
+{
+  "pollOptionId": "221e782f-930f-4195-bdfb-d665a53d62ee"
+}
+
+###
+# Obs: test on postman, hoppscotch or insomnia => REST Client not able to websocket requests
+# (4) Get poll results using WebSocket
+# @name find_poll_results_websocket
+{{baseUrlWebsocket}}/polls/bd879322-7eb5-4fca-88e0-1302d254f4f8/results
+Accept: */*
