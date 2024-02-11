@@ -11,11 +11,7 @@
 # NLW Expert (NodeJS) ![NodeJS Logo](https://www.rocketseat.com.br/eventos/nlw/_next/static/media/node.10094861.svg)
 
 <div align="center"> 
-  <img
-    src="./project/websocket.png"
-    width="322"
-    height="auto"
-  />
+  <img src="./project/websocket.png" width="1604" height="auto" />
 </div>
 
 ## Project
