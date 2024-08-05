@@ -8,7 +8,7 @@
   </a>
 </div>
 
-# NLW Expert (NodeJS) ![NodeJS Logo]([https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css)
+# NLW Expert (NodeJS) ![NodeJS Logo](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css)
 
 <div align="center"> 
   <img src="./project/websocket.png" width="1604" height="auto" />
